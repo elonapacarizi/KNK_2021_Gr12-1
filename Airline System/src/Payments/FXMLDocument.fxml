@@ -1,14 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="Payments.FXMLDocument"
-            prefHeight="400.0" prefWidth="600.0">
-
-</AnchorPane>
+<AnchorPane id="AnchorPane" fx:id="ap" minHeight="677.0" minWidth="1140.0" prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Payments.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="530.0" fitWidth="738.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Program%20Files/Airline%20System/src/Payments/pay.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="next" layoutX="1015.0" layoutY="610.0" mnemonicParsing="false" onAction="#Onnext" prefHeight="50.0" prefWidth="101.0" text="Next">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Button>
+      <TextField layoutX="691.0" layoutY="326.0" prefHeight="47.0" prefWidth="191.0" promptText="Your Name">
+         <font>
+            <Font name="Monospaced Bold Italic" size="19.0" />
+         </font>
+      </TextField>
+      <Label layoutX="217.0" layoutY="48.0" text="Complete Your Payment" textFill="#15305e" underline="true">
+         <font>
+            <Font name="Ink Free" size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="65.0" layoutY="597.0" mnemonicParsing="false" onAction="#Onback" text="Back ">
+         <font>
+            <Font name="Franklin Gothic Medium Italic" size="20.0" />
+         </font>
+      </Button>
+      <TextField layoutX="692.0" layoutY="471.0" prefHeight="47.0" prefWidth="130.0" promptText="Date">
+         <font>
+            <Font name="Monospaced Bold Italic" size="19.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="786.0" layoutY="410.0" prefHeight="38.0" prefWidth="191.0" promptText="Phone Number">
