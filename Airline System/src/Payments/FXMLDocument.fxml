@@ -38,3 +38,52 @@
          </font>
       </TextField>
       <TextField layoutX="786.0" layoutY="410.0" prefHeight="38.0" prefWidth="191.0" promptText="Phone Number">
+
+         <font>
+            <Font name="Monospaced Bold Italic" size="19.0" />
+         </font>
+      </TextField>
+      <DatePicker layoutX="849.0" layoutY="480.0" prefHeight="38.0" prefWidth="130.0" />
+      <Button layoutX="498.0" layoutY="543.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="106.0" text="Exit">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Button>
+      <RadioButton layoutX="779.0" layoutY="150.0" mnemonicParsing="false" text="Credit/ Debit Card" textFill="#cd28a6">
+         <font>
+            <Font name="SansSerif Bold Italic" size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="767.0" layoutY="209.0" mnemonicParsing="false" text="Google Pay" textFill="#e42841">
+         <font>
+            <Font name="SansSerif Bold Italic" size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="791.0" layoutY="101.0" mnemonicParsing="false" text="NetBanking" textFill="#598626">
+         <font>
+            <Font name="SansSerif Bold Italic" size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="764.0" layoutY="264.0" mnemonicParsing="false" text="Paypal" textFill="#2eb29e">
+         <font>
+            <Font name="SansSerif Bold Italic" size="20.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="753.0" layoutY="35.0" text="Choose payment Mode :-" textFill="#e44040" underline="true">
+         <font>
+            <Font name="Monospaced Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <TextField layoutX="693.0" layoutY="546.0" prefHeight="38.0" prefWidth="121.0" promptText="CVV">
+         <font>
+            <Font name="Monospaced Bold Italic" size="20.0" />
+         </font>
+      </TextField>
+      <PasswordField layoutX="840.0" layoutY="543.0" prefHeight="45.0" prefWidth="148.0" promptText="Password">
+         <font>
+            <Font name="Monospaced Bold Italic" size="20.0" />
+         </font>
+      </PasswordField>
+      
+   </children>
+</AnchorPane>
