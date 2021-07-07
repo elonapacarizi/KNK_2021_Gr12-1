@@ -1,14 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="Print_Details.FXMLDocument"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane id="AnchorPane" fx:id="ap" minHeight="624.0" minWidth="1140.0" prefHeight="624.0" prefWidth="1142.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Print_Details.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="666.0" fitWidth="1140.0" layoutX="1.0" opacity="0.62" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Program%20Files/Airline%20System/src/Print_Details/Last.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="exit" layoutX="962.0" layoutY="565.0" mnemonicParsing="false" onAction="#Onnext" prefHeight="38.0" prefWidth="83.0" text="Exit">
+         <font>
+            <Font name="Franklin Gothic Medium Italic" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="199.0" layoutY="14.0" text="Your Ticket details " textFill="#15305e" underline="true">
+         <font>
+            <Font name="Ink Free" size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="448.0" layoutY="559.0" mnemonicParsing="false" onAction="#Onback" text="Back  to Home">
+         <font>
+            <Font name="Franklin Gothic Medium Italic" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="696.0" layoutY="274.0" text="Time">
+         <font>
+            <Font name="Ink Free" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="695.0" layoutY="212.0" text="Phone Number">
+         <font>
+            <Font name="Ink Free" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="695.0" layoutY="67.0" text="Name">
+         <font>
+            <Font name="Ink Free" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="695.0" layoutY="141.0" text="Class">
+         <font>
+            <Font name="Ink Free" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="689.0" layoutY="415.0" text="Mode of Payment">
+         <font>
+            <Font name="Ink Free" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="315.0" layoutY="300.0" text="To">
+         <font>
+            <Font name="Ink Free" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="291.0" layoutY="143.0" text="From">
+         <font>
+            <Font name="Ink Free" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="696.0" layoutY="356.0" text="No of Passengers">
+         <font>
+            <Font name="Ink Free" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="816.0" layoutY="83.0" text="Label" textFill="#327cd7" underline="true">
+         <font>
+            <Font name="SansSerif Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="822.0" layoutY="149.0" text="Label" textFill="#327cd7" underline="true">
+         <font>
+            <Font name="SansSerif Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="910.0" layoutY="220.0" text="Label" textFill="#327cd7" underline="true">
+         <font>
+            <Font name="SansSerif Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="400.0" layoutY="166.0" text="Label" textFill="#e81a1a" underline="true">
+         <font>
+            <Font name="Monospaced Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="400.0" layoutY="304.0" text="Label" textFill="#e81a1a" underline="true">
+         <font>
+            <Font name="Monospaced Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="822.0" layoutY="288.0" text="Label" textFill="#cc1fe0" underline="true">
+         <font>
+            <Font name="SansSerif Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="910.0" layoutY="367.0" text="Label" textFill="#cc1fe0" underline="true">
+         <font>
+            <Font name="SansSerif Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="925.0" layoutY="438.0" text="Label" textFill="#cc1fe0">
+         <font>
+            <Font name="SansSerif Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      
+   </children>
 </AnchorPane>
