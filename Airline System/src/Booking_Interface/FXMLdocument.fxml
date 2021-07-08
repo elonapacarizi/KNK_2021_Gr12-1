@@ -5,7 +5,6 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-
 <AnchorPane fx:id="rootpane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Booking_Interface.FXMLDocumentController">
    <children>
       <Pane id="AnchorPane">
@@ -20,7 +19,7 @@
                   <Font name="Leelawadee UI Bold" size="18.0" />
                </font>
             </Button>
-            <Button fx:id="register" layoutX="878.0" layoutY="379.0" mnemonicParsing="false" onAction="#OnRegister" prefHeight="37.0" prefWidth="147.0" text="Register" textFill="#b53e1a">
+            <Button fx:id="register" layoutX="835.0" layoutY="379.0" mnemonicParsing="false" onAction="#OnRegister" prefHeight="52.0" prefWidth="190.0" text="Register" textFill="#b53e1a">
                <font>
                   <Font name="Cambria Math" size="27.0" />
                </font>
@@ -35,12 +34,12 @@
                   <Font name="SansSerif Bold Italic" size="22.0" />
                </font>
             </Button>
-            <Button fx:id="welcome" layoutX="699.0" layoutY="207.0" mnemonicParsing="false" onAction="#OnWelcome" prefHeight="62.0" prefWidth="246.0" text="Welcome as Guest" textFill="#163bbf" underline="true">
+            <Button fx:id="welcome" layoutX="592.0" layoutY="207.0" mnemonicParsing="false" onAction="#OnWelcome" prefHeight="62.0" prefWidth="353.0" text="Welcome as Guest" textFill="#163bbf" underline="true">
                <font>
                   <Font name="Ink Free" size="27.0" />
                </font>
             </Button>
-            <Button fx:id="admin" layoutX="300.0" layoutY="446.0" mnemonicParsing="false" onAction="#onAdmin" prefHeight="48.0" prefWidth="127.0" text="Admin" textFill="#242326">
+            <Button fx:id="admin" layoutX="300.0" layoutY="446.0" mnemonicParsing="false" onAction="#onAdmin" prefHeight="62.0" prefWidth="190.0" text="Admin" textFill="#242326">
                <font>
                   <Font name="Ink Free" size="27.0" />
                </font>
@@ -50,16 +49,26 @@
                   <Font name="SansSerif Bold Italic" size="22.0" />
                </font>
             </Button>
-            <Label layoutX="244.0" layoutY="52.0" prefHeight="77.0" prefWidth="783.0" text="Airline Ticket Reservation System " textFill="#eeeeee">
+            <Label fx:id="l1" layoutX="244.0" layoutY="52.0" prefHeight="77.0" prefWidth="783.0" text="Airline Ticket Reservation System " textFill="#eeeeee">
                <font>
                   <Font name="Comic Sans MS" size="44.0" />
                </font>
             </Label>
-            <Label layoutX="116.0" layoutY="543.0" prefHeight="48.0" prefWidth="520.0" text="Register To get 35% Discount on Flight tickets">
+            <Label fx:id="l2" layoutX="116.0" layoutY="543.0" prefHeight="48.0" prefWidth="520.0" text="Register To get 35% Discount on Flight tickets">
                <font>
                   <Font name="Comic Sans MS Bold Italic" size="22.0" />
                </font>
             </Label>
+            <RadioButton fx:id="ab" layoutX="55.0" layoutY="35.0" mnemonicParsing="false" onAction="#onSelect" text="Albanian">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="en" layoutX="55.0" layoutY="74.0" mnemonicParsing="false" onAction="#onSelect" text="English">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </RadioButton>
             
          </children>
       </Pane>
