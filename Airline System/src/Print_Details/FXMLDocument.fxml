@@ -47,7 +47,7 @@
             <Font name="Ink Free" size="29.0" />
          </font>
       </Label>
-      <Label layoutX="689.0" layoutY="415.0" text="Mode of Payment">
+      <Label layoutX="682.0" layoutY="456.0" text="Mode of Payment">
          <font>
             <Font name="Ink Free" size="28.0" />
          </font>
@@ -62,49 +62,59 @@
             <Font name="Ink Free" size="28.0" />
          </font>
       </Label>
-      <Label layoutX="696.0" layoutY="356.0" text="No of Passengers">
+      <Label layoutX="671.0" layoutY="362.0" text="No of Passengers">
          <font>
             <Font name="Ink Free" size="26.0" />
          </font>
       </Label>
-      <Label layoutX="816.0" layoutY="83.0" text="Label" textFill="#327cd7" underline="true">
+      <Label fx:id="n" layoutX="816.0" layoutY="83.0" text="George" textFill="#327cd7" underline="true">
          <font>
             <Font name="SansSerif Bold Italic" size="28.0" />
          </font>
       </Label>
-      <Label layoutX="822.0" layoutY="149.0" text="Label" textFill="#327cd7" underline="true">
+      <Label fx:id="c" layoutX="822.0" layoutY="149.0" text="Bussiness Class" textFill="#327cd7" underline="true">
          <font>
             <Font name="SansSerif Bold Italic" size="28.0" />
          </font>
       </Label>
-      <Label layoutX="910.0" layoutY="220.0" text="Label" textFill="#327cd7" underline="true">
+      <Label fx:id="p" layoutX="910.0" layoutY="220.0" text="122433234" textFill="#327cd7" underline="true">
          <font>
             <Font name="SansSerif Bold Italic" size="28.0" />
          </font>
       </Label>
-      <Label layoutX="400.0" layoutY="166.0" text="Label" textFill="#e81a1a" underline="true">
+      <Label fx:id="f" layoutX="400.0" layoutY="166.0" text="Kosovo" textFill="#e81a1a" underline="true">
          <font>
             <Font name="Monospaced Bold Italic" size="27.0" />
          </font>
       </Label>
-      <Label layoutX="400.0" layoutY="304.0" text="Label" textFill="#e81a1a" underline="true">
+      <Label fx:id="t" layoutX="400.0" layoutY="304.0" text="Cannada" textFill="#e81a1a" underline="true">
          <font>
             <Font name="Monospaced Bold Italic" size="27.0" />
          </font>
       </Label>
-      <Label layoutX="822.0" layoutY="288.0" text="Label" textFill="#cc1fe0" underline="true">
+      <Label fx:id="ti" layoutX="822.0" layoutY="288.0" text="8:34" textFill="#cc1fe0" underline="true">
          <font>
             <Font name="SansSerif Bold Italic" size="28.0" />
          </font>
       </Label>
-      <Label layoutX="910.0" layoutY="367.0" text="Label" textFill="#cc1fe0" underline="true">
+      <Label fx:id="pa" layoutX="910.0" layoutY="367.0" text="2" textFill="#cc1fe0" underline="true">
          <font>
             <Font name="SansSerif Bold Italic" size="28.0" />
          </font>
       </Label>
-      <Label layoutX="925.0" layoutY="438.0" text="Label" textFill="#cc1fe0">
+      <Label fx:id="m" layoutX="787.0" layoutY="501.0" prefHeight="53.0" prefWidth="337.0" text="Paypal" textFill="#cc1fe0">
          <font>
             <Font name="SansSerif Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="198.0" prefHeight="48.0" prefWidth="120.0" text="Ticket no:-">
+         <font>
+            <Font name="Constantia" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="tc" layoutX="33.0" layoutY="236.0" prefHeight="32.0" prefWidth="114.0" text="A1Layer623">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
       
