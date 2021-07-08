@@ -100,6 +100,23 @@ public class FXMLDocumentController implements Initializable {
     private void onSelect(ActionEvent event)throws IOException {
          if(en.isSelected()){
              FileOutputStream out = null;
+             
+              File filet = new File("C:/Program Files/Airline System/src/Text_Files/languages.txt");
+
+             String f=filet.getAbsolutePath();
+
+             String text = "en";
+             byte b[] = text.getBytes();
+
+             String outputFileName = System.getProperty("user.home",
+                     File.separatorChar + "home"
+                             + File.separatorChar + "monica")
+                     + File.separatorChar + "text.txt";
+             out = new FileOutputStream(f);
+             out.write(b);
+             out.close();
+
+         }
      @FXML
     private void OnHelp(ActionEvent event) {
       
