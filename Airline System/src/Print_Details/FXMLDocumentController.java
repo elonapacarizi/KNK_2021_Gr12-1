@@ -31,6 +31,8 @@ import javafx.scene.layout.Pane;
 
       @FXML
   private Pane rootpane;
+
+
     
     
     
@@ -51,4 +53,44 @@ private AnchorPane ap;
    private Button back;
    @FXML
    private Button exit;
+
+ @FXML
+    private void Onback(ActionEvent event) throws IOException {
+           Parent root = FXMLLoader.load(getClass().getResource("/Booking_Interface/FXMLDocument.fxml"));
+           Stage window= (Stage)back.getScene().getWindow();
+           window.setScene(new Scene(root));
+           window.centerOnScreen();
+    }
+    
+    @FXML
+    private void Onnext(ActionEvent event) throws IOException {
+
+        Stage stage = (Stage) exit.getScene().getWindow();
+
+        stage.close();
+      
+    }
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        ap.setBackground(Background.EMPTY);
+         File Des = new File("C:/Program Files/Airline System/src/Text_Files/From.txt");
+        File Des1 = new File("C:/Program Files/Airline System/src/Text_Files/To.txt");
+
+        File payments = new File("C:/Program Files/Airline System/src/Text_Files/payment.txt");
+
+        File name = new File("C:/Program Files/Airline System/src/Text_Files/name.txt");
+        File phone= new File("C:/Program Files/Airline System/src/Text_Files/phone.txt");
+
+        File ticket = new File("C:/Program Files/Airline System/src/Text_Files/Ticket.txt");
+
+        File plane = new File("C:/Program Files/Airline System/src/Text_Files/PlaneClass.txt");
+
+        File time= new File("C:/Program Files/Airline System/src/Text_Files/time.txt");
+
+        File passeneger = new File("C:/Program Files/Airline System/src/Text_Files/passenger.txt");
+
+
+
+
+
 
