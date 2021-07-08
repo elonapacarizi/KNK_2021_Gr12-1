@@ -19,6 +19,37 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
+public class FXMLDocumentController implements Initializable {
+    @FXML
+    private Pane rootpane;
+    @FXML
+    private AnchorPane ap;
+    @FXML
+    private Button Print;
+    @FXML
+    private Button b1;
+    @FXML
+    private Button b2;
+    @FXML
+    private Button b3;
+    @FXML
+    private Button b4;
+    @FXML
+    private Button b5;
+    @FXML
+    private Button b6;
+    @FXML
+    private Button b7;
+    @FXML
+    private Button b8;
+    @FXML
+    private Button b9;
+    @FXML
+    private Button b10;
+    @FXML
+    private Button b11;
+    @FXML
+    private Button b12;
 
 
     public FXMLDocumentController() {
