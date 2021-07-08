@@ -96,6 +96,79 @@ static URI p= file.toURI();
            
 
    }
+RPass.setText(FakePass.getText());
+           RPass.setVisible(true);
+           FakePass.setVisible(false);
+      
+   }                
+    @FXML
+    private void Onskip(ActionEvent event) {
+       
+              mp.stop();
+     Stage stage = (Stage) skip.getScene().getWindow();
+ 
+    stage.close();
 
+    
+      
+    }
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+       FakePass.setVisible(false);
+      
+    
+    mv.setPreserveRatio(true);
+
+       mv.setMediaPlayer(mp);
+      
+       mp.play();
+       if(mp.getStatus()==PLAYING){
+            
+ 
+       }else{
+           mp.stop();
+           mp.play();
+       }
+    }    
+                               
+
+    @FXML
+    private void OnSubmit(ActionEvent event) {
+           if(RUser.getText().trim().isEmpty()&&RPass.getText().trim().isEmpty()){
+        
+            message("Username Field should not be left empty"
+                    + "and Password Field should not be left empty");
+        }
+       
+        
+        else if(RUser.getText().trim().isEmpty())
+        {
+            
+        message("Username Field should not be left empty");
+        }
+        else if(RPass.getText().trim().isEmpty())
+        {
+          message("Password Field should not be left empty");
+        }
+        else if(Cap.getText().trim().isEmpty())
+        {
+          message("Please do enter Captcha");
+        }     
+        else if(!Cap.getText().equals("9xyz")){
+                message("InValid Captcha entered");
+           }
+        else if (RNick.getText().trim().isEmpty()){
+              message("Enter your nickname Please");
+        }
+        else{
+            
+ 
+            message("You have been registered succesfully");
+          
+
+        }
+    
+    }
+    
 
 
