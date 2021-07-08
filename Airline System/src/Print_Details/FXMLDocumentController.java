@@ -109,6 +109,55 @@ private AnchorPane ap;
                 m.setText((scanner.next()));
 
         }catch (Exception e) { e.printStackTrace(); }
+            try (Scanner scanner = new Scanner(name)) {
+
+            while (scanner.hasNext())
+                n.setText((scanner.next()));
+
+        }catch (Exception e) { e.printStackTrace(); }
+        try (Scanner scanner = new Scanner(time)) {
+
+            while (scanner.hasNext())
+                ti.setText((scanner.next()));
+
+        }catch (Exception e) { e.printStackTrace(); }
+        try (Scanner scanner = new Scanner(plane)) {
+
+            while (scanner.hasNext())
+                c.setText((scanner.next()));
+
+        }catch (Exception e) { e.printStackTrace(); }
+        try (Scanner scanner = new Scanner(ticket)) {
+
+            while (scanner.hasNext())
+                tc.setText((scanner.next()));
+
+        }catch (Exception e) { e.printStackTrace(); }
+        try (Scanner scanner = new Scanner(passeneger)) {
+
+            while (scanner.hasNext())
+                pa.setText((scanner.next()));
+
+        }catch (Exception e) { e.printStackTrace(); }
+
+
+        try (Scanner scanner = new Scanner(phone)) {
+
+            while (scanner.hasNext())
+                p.setText((scanner.next()));
+
+        }catch (Exception e) { e.printStackTrace(); }
+
+
+    }
+
+
+       }
+
+                               
+
+
+          
 
           
           
