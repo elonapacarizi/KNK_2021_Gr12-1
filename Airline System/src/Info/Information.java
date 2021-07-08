@@ -6,6 +6,9 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyCodeCombination;
+import javafx.scene.input.KeyCombination;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -21,8 +24,22 @@ public class Information extends Application {
 
 
         Scene scene = new Scene(root);
-        primaryStage.setScene(scene);
-         primaryStage.show();
+        KeyCombination kc= new KeyCodeCombination(KeyCode.Z, KeyCodeCombination.CONTROL_DOWN);
+        Runnable rn = ()-> System.exit(0);
+        scene.getAccelerators().put(kc, rn);
+
+
+
+        KeyCombination kc1= new KeyCodeCombination(KeyCode.N, KeyCodeCombination.CONTROL_DOWN);
+        Runnable rn1 = ()-> {
+            try {
+                start1(primaryStage);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        };
+        scene.getAccelerators().put(kc1, rn1);
+
     }
 
     /**
