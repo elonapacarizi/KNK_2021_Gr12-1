@@ -68,28 +68,6 @@ public class FXMLDocumentController implements Initializable {
     stage.close();
   
     }
-     @FXML
-         private void OnWelcome(ActionEvent event) throws IOException {
-         Parent root = FXMLLoader.load(getClass().getResource("/destination/FXMLDocument.fxml"));
-         Stage window= (Stage)welcome.getScene().getWindow();
-         window.setScene(new Scene(root,1280,720));
-         window.centerOnScreen();
-         }
-         @FXML
-    private void OnRegister(ActionEvent event) throws IOException {
-
-    }
-     @FXML
-    private void OnLogin(ActionEvent event) throws IOException {
-
-    }
-    
-     @FXML
-    private void onAbout(ActionEvent event) throws IOException {
-    
-
-  
-    }
     
      @FXML
     private void OnHelp(ActionEvent event) {
