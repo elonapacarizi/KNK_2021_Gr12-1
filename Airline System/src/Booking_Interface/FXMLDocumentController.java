@@ -117,6 +117,21 @@ public class FXMLDocumentController implements Initializable {
              out.close();
 
          }
+        if(ab.isSelected()){
+    l1.setText("Sistemi i Rezervimit të Biletave të Linjës Ajrore");
+    l2.setText(
+            "Regjistrohuni për të marrë 35% zbritje në biletat e fluturimit");
+
+    about.setText(
+            "rreth");
+    help.setText("ndihmë");
+    welcome.setText("mirëseardhje si mysafir");
+    register.setText("Regjistrohuni");
+    admin.setText("administratori");
+    skip.setText("dalje");
+
+    FileOutputStream out = null;
+
      @FXML
     private void OnHelp(ActionEvent event) {
       
