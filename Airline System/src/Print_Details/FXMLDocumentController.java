@@ -88,6 +88,30 @@ private AnchorPane ap;
         File time= new File("C:/Program Files/Airline System/src/Text_Files/time.txt");
 
         File passeneger = new File("C:/Program Files/Airline System/src/Text_Files/passenger.txt");
+          
+            try (Scanner scanner = new Scanner(Des)) {
+
+            while (scanner.hasNext())
+                f.setText((scanner.next()));
+
+        }catch (Exception e) { e.printStackTrace(); }
+
+        try (Scanner scanner = new Scanner(Des1)) {
+
+            while (scanner.hasNext())
+                t.setText((scanner.next()));
+
+        }catch (Exception e) { e.printStackTrace(); }
+
+        try (Scanner scanner = new Scanner(payments)) {
+
+            while (scanner.hasNext())
+                m.setText((scanner.next()));
+
+        }catch (Exception e) { e.printStackTrace(); }
+
+          
+          
 
 
 
