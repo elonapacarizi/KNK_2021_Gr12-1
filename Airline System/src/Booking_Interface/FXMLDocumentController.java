@@ -56,8 +56,7 @@ public class FXMLDocumentController implements Initializable {
      @Override
      
     public void initialize(URL url, ResourceBundle rb) {
-//main.minHeight(720);
-//main.maxWidth(1200);
+
     } 
     
     
