@@ -55,6 +55,20 @@ public class Information extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
     }
+    public void start1(Stage primaryStage) throws Exception{
+        Parent root1 = FXMLLoader.load(getClass().getResource("/Payments/FXMLDocument.fxml"));
+        Scene scene = new Scene(root1);
+        primaryStage.setScene(scene);
+        primaryStage.show();
+
+    }
+    public void start2(Stage primaryStage) throws Exception{
+        Parent root1 = FXMLLoader.load(getClass().getResource("/destination/FXMLDocument.fxml"));
+        Scene scene = new Scene(root1);
+        primaryStage.setScene(scene);
+        primaryStage.show();
+
+    }
 
     /**
      * @param args the command line arguments
