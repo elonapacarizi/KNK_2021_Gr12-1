@@ -40,6 +40,20 @@ public class Information extends Application {
         };
         scene.getAccelerators().put(kc1, rn1);
 
+        KeyCombination kc2= new KeyCodeCombination(KeyCode.B, KeyCodeCombination.CONTROL_DOWN);
+        Runnable rn2 = ()-> {
+            try {
+                start2(primaryStage);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        };
+        scene.getAccelerators().put(kc2, rn2);
+
+
+
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
 
     /**
