@@ -94,7 +94,31 @@ private AnchorPane ap;
            window.setScene(new Scene(root));
            window.centerOnScreen();
     }
-    
+
+    @FXML
+    private void OnSelect(ActionEvent event) throws IOException
+    {
+        String s=CClass.getSelectionModel().getSelectedItem();
+
+        SClass.setText(s);
+
+
+    }
+    @FXML
+    private void OndSelect(ActionEvent event) throws IOException
+    {
+
+
+        LocalDate i = Cdate.getValue();
+        date.setText(i.toString());
+
+    }
+
+
+    public int value(int i){
+        return i;
+    }
+
     @FXML
     private void Onnext(ActionEvent event) throws IOException {
 
