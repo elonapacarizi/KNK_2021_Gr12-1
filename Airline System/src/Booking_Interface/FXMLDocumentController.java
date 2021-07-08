@@ -90,6 +90,17 @@ public class FXMLDocumentController implements Initializable {
          window.centerOnScreen();
     }
      @FXML
+    private void onAbout(ActionEvent event) throws IOException {
+    
+
+  
+    }
+
+    @FXML
+    private void onSelect(ActionEvent event)throws IOException {
+         if(en.isSelected()){
+             FileOutputStream out = null;
+     @FXML
     private void OnHelp(ActionEvent event) {
       
 
