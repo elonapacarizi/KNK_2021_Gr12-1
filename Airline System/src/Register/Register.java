@@ -11,10 +11,7 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-/**
- *
- * @author freec
- */
+
 public class Register extends Application {
    
     @Override
@@ -28,9 +25,7 @@ public class Register extends Application {
          primaryStage.show();
     }
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
         launch(args);
     }

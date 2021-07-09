@@ -1,108 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="ap" minHeight="624.0" minWidth="1140.0" prefHeight="624.0" prefWidth="1142.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Print_Details.FXMLDocumentController">
+<AnchorPane id="AnchorPane" fx:id="ap" minHeight="624.0" minWidth="1140.0" prefHeight="624.0" prefWidth="1142.0" style="-fx-background-color: #addeed;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Print_Details.FXMLDocumentController">
    <children>
-      <ImageView fitHeight="666.0" fitWidth="1140.0" layoutX="1.0" opacity="0.62" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="file:/C:/Program%20Files/Airline%20System/src/Print_Details/Last.jpg" />
-         </image>
-      </ImageView>
-      <Button fx:id="exit" layoutX="962.0" layoutY="565.0" mnemonicParsing="false" onAction="#Onnext" prefHeight="38.0" prefWidth="83.0" text="Exit">
+      <ImageView fitHeight="624.0" fitWidth="1177.0" layoutX="203.0" opacity="0.62" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="exit" layoutX="976.0" layoutY="559.0" mnemonicParsing="false" onAction="#Onnext" prefHeight="38.0" prefWidth="83.0" text="Exit">
          <font>
             <Font name="Franklin Gothic Medium Italic" size="20.0" />
          </font>
       </Button>
-      <Label layoutX="199.0" layoutY="14.0" text="Your Ticket details " textFill="#15305e" underline="true">
+      <Label layoutX="236.0" layoutY="63.0" prefHeight="45.0" prefWidth="296.0" text="Your Ticket details " textFill="#284d8a">
          <font>
-            <Font name="Ink Free" size="32.0" />
+            <Font name="Cambria" size="32.0" />
          </font>
       </Label>
-      <Button fx:id="back" layoutX="448.0" layoutY="559.0" mnemonicParsing="false" onAction="#Onback" text="Back  to Home">
+      <Button fx:id="back" layoutX="55.0" layoutY="559.0" mnemonicParsing="false" onAction="#Onback" text="Back  to Home">
          <font>
             <Font name="Franklin Gothic Medium Italic" size="20.0" />
          </font>
       </Button>
-      <Label layoutX="696.0" layoutY="274.0" text="Time">
+      <Label layoutX="695.0" layoutY="274.0" text="Time">
          <font>
-            <Font name="Ink Free" size="29.0" />
+            <Font name="Cambria" size="29.0" />
          </font>
       </Label>
       <Label layoutX="695.0" layoutY="212.0" text="Phone Number">
          <font>
-            <Font name="Ink Free" size="29.0" />
+            <Font name="Cambria" size="29.0" />
          </font>
       </Label>
       <Label layoutX="695.0" layoutY="67.0" text="Name">
          <font>
-            <Font name="Ink Free" size="29.0" />
+            <Font name="Cambria" size="29.0" />
          </font>
       </Label>
       <Label layoutX="695.0" layoutY="141.0" text="Class">
          <font>
-            <Font name="Ink Free" size="29.0" />
+            <Font name="Cambria" size="29.0" />
          </font>
       </Label>
-      <Label layoutX="682.0" layoutY="456.0" text="Mode of Payment">
+      <Label layoutX="692.0" layoutY="456.0" text="Mode of Payment">
+         <font>
+            <Font name="Cambria" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="116.0" layoutY="377.0" text="To">
          <font>
             <Font name="Ink Free" size="28.0" />
          </font>
       </Label>
-      <Label layoutX="315.0" layoutY="300.0" text="To">
+      <Label layoutX="110.0" layoutY="323.0" text="From">
          <font>
             <Font name="Ink Free" size="28.0" />
          </font>
       </Label>
-      <Label layoutX="291.0" layoutY="143.0" text="From">
+      <Label layoutX="693.0" layoutY="362.0" text="No of Passengers">
          <font>
-            <Font name="Ink Free" size="28.0" />
+            <Font name="Cambria" size="29.0" />
          </font>
       </Label>
-      <Label layoutX="671.0" layoutY="362.0" text="No of Passengers">
-         <font>
-            <Font name="Ink Free" size="26.0" />
-         </font>
-      </Label>
-      <Label fx:id="n" layoutX="816.0" layoutY="83.0" text="George" textFill="#327cd7" underline="true">
+      <Label fx:id="n" layoutX="816.0" layoutY="83.0" text="George" textFill="#f52020">
          <font>
             <Font name="SansSerif Bold Italic" size="28.0" />
          </font>
       </Label>
-      <Label fx:id="c" layoutX="822.0" layoutY="149.0" text="Bussiness Class" textFill="#327cd7" underline="true">
+      <Label fx:id="c" layoutX="822.0" layoutY="149.0" text="Bussiness Class" textFill="#f52020">
          <font>
             <Font name="SansSerif Bold Italic" size="28.0" />
          </font>
       </Label>
-      <Label fx:id="p" layoutX="910.0" layoutY="220.0" text="122433234" textFill="#327cd7" underline="true">
+      <Label fx:id="p" layoutX="910.0" layoutY="220.0" text="122433234" textFill="#f52020">
          <font>
             <Font name="SansSerif Bold Italic" size="28.0" />
          </font>
       </Label>
-      <Label fx:id="f" layoutX="400.0" layoutY="166.0" text="Kosovo" textFill="#e81a1a" underline="true">
+      <Label fx:id="f" layoutX="199.0" layoutY="336.0" text="Kosovo" textFill="#e81a1a">
          <font>
             <Font name="Monospaced Bold Italic" size="27.0" />
          </font>
       </Label>
-      <Label fx:id="t" layoutX="400.0" layoutY="304.0" text="Cannada" textFill="#e81a1a" underline="true">
+      <Label fx:id="t" layoutX="191.0" layoutY="384.0" text="Cannada" textFill="#f52020">
          <font>
             <Font name="Monospaced Bold Italic" size="27.0" />
          </font>
       </Label>
-      <Label fx:id="ti" layoutX="822.0" layoutY="288.0" text="8:34" textFill="#cc1fe0" underline="true">
+      <Label fx:id="ti" layoutX="822.0" layoutY="288.0" text="8:34" textFill="#f52020">
          <font>
             <Font name="SansSerif Bold Italic" size="28.0" />
          </font>
       </Label>
-      <Label fx:id="pa" layoutX="910.0" layoutY="367.0" text="2" textFill="#cc1fe0" underline="true">
+      <Label fx:id="pa" layoutX="910.0" layoutY="367.0" text="2" textFill="#f52020">
          <font>
             <Font name="SansSerif Bold Italic" size="28.0" />
          </font>
       </Label>
-      <Label fx:id="m" layoutX="787.0" layoutY="501.0" prefHeight="53.0" prefWidth="337.0" text="Paypal" textFill="#cc1fe0">
+      <Label fx:id="m" layoutX="940.0" layoutY="448.0" prefHeight="53.0" prefWidth="155.0" text="Paypal" textFill="#f52020">
          <font>
             <Font name="SansSerif Bold Italic" size="28.0" />
          </font>
@@ -112,7 +109,7 @@
             <Font name="Constantia" size="18.0" />
          </font>
       </Label>
-      <Label fx:id="tc" layoutX="33.0" layoutY="236.0" prefHeight="32.0" prefWidth="114.0" text="A1Layer623">
+      <Label fx:id="tc" layoutX="203.0" layoutY="214.0" prefHeight="32.0" prefWidth="114.0" text="A1Layer623">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>

@@ -96,7 +96,7 @@ static URI p= file.toURI();
            
 
    }
-RPass.setText(FakePass.getText());
+           RPass.setText(FakePass.getText());
            RPass.setVisible(true);
            FakePass.setVisible(false);
       
@@ -152,10 +152,10 @@ RPass.setText(FakePass.getText());
         }
         else if(Cap.getText().trim().isEmpty())
         {
-          message("Please do enter Captcha");
+          message("Im not a robot");
         }     
         else if(!Cap.getText().equals("9xyz")){
-                message("Invalid code entered");
+                message("InValid Captcha entered");
            }
         else if (RNick.getText().trim().isEmpty()){
               message("Enter your nickname Please");
@@ -170,7 +170,7 @@ RPass.setText(FakePass.getText());
     
     }
     
-private void message(String x){
+    private void message(String x){
   Alert alert = new Alert(Alert.AlertType.INFORMATION);
           alert.setContentText(x);
 alert.show();
@@ -235,5 +235,3 @@ alert.show();
     
     
 }
-
-

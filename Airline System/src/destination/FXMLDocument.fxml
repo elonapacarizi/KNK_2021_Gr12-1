@@ -1,55 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.media.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="rootpane" minHeight="720.0" minWidth="1280.0" prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="destination.FXMLDocumentController">
+<AnchorPane id="AnchorPane" fx:id="rootpane" minHeight="720.0" minWidth="1280.0" prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="destination.FXMLDocumentController">
    <children>
-      <MediaView fx:id="mv" fitHeight="720.0" fitWidth="1280.0" AnchorPane.bottomAnchor="720.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1020.0" AnchorPane.topAnchor="0.0" />
-      <Button fx:id="next" layoutX="1148.0" layoutY="645.0" mnemonicParsing="false" onAction="#Onnext" onKeyPressed="#KeyN" prefHeight="38.0" prefWidth="83.0" text="Next">
+      <MediaView fx:id="mv" fitHeight="720.0" fitWidth="1280.0" layoutX="-14.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="0.0" />
+      <Button fx:id="next" layoutX="1148.0" layoutY="645.0" mnemonicParsing="false" onAction="#Onnext" onKeyPressed="#KeyN" prefHeight="38.0" prefWidth="83.0" style="-fx-background-color: #ab96a7;" text="Next" textFill="WHITE">
          <font>
             <Font name="Franklin Gothic Medium Italic" size="20.0" />
          </font></Button>
-      <ComboBox fx:id="FCom" layoutX="1021.0" layoutY="371.0" onAction="#OnSelect" onKeyPressed="#KeyN" prefHeight="39.0" prefWidth="133.0" promptText="Choose" />
-      <ComboBox fx:id="Tcom" layoutX="438.0" layoutY="475.0" onAction="#OnSelect" onKeyPressed="#KeyN" prefHeight="39.0" prefWidth="150.0" promptText="Choose" />
-      <TextField fx:id="From" layoutX="850.0" layoutY="288.0" onAction="#OnSelect" prefHeight="38.0" prefWidth="133.0" promptText="India">
+      <ComboBox fx:id="FCom" layoutX="795.0" layoutY="308.0" onAction="#OnSelect" onKeyPressed="#KeyN" prefHeight="39.0" prefWidth="133.0" promptText="Choose" style="-fx-background-color: #ab96a7;" />
+      <ComboBox fx:id="Tcom" layoutX="350.0" layoutY="308.0" onAction="#OnSelect" onKeyPressed="#KeyN" prefHeight="39.0" prefWidth="150.0" promptText="Choose" style="-fx-background-color: #ab96a7;" />
+      <TextField fx:id="From" layoutX="795.0" layoutY="371.0" onAction="#OnSelect" prefHeight="38.0" prefWidth="133.0" promptText="State">
          <font>
             <Font name="Gadugi Bold" size="18.0" />
          </font>
       </TextField>
-      <TextField fx:id="To" layoutX="236.0" layoutY="404.0" onAction="#OnSelect" prefHeight="31.0" prefWidth="150.0" promptText="Canada">
+      <TextField fx:id="To" layoutX="350.0" layoutY="371.0" onAction="#OnSelect" prefHeight="31.0" prefWidth="150.0" promptText="Kosovë">
          <font>
             <Font name="Gadugi Bold" size="18.0" />
          </font>
       </TextField>
-      <Label fx:id="f1" layoutX="767.0" layoutY="193.0" text="From">
+      <Label fx:id="f1" layoutX="824.0" layoutY="233.0" text="From">
          <font>
-            <Font name="Ink Free" size="32.0" />
+            <Font name="Cambria" size="32.0" />
          </font>
       </Label>
-      <Label fx:id="t1" layoutX="180.0" layoutY="307.0" text="To">
+      <Label fx:id="t1" layoutX="407.0" layoutY="233.0" text="To">
          <font>
-            <Font name="Ink Free" size="32.0" />
+            <Font name="Cambria" size="32.0" />
          </font>
       </Label>
-      <Label fx:id="label" layoutX="447.0" layoutY="80.0" text="Choose your Destination" textFill="#383c43">
+      <Label fx:id="label" layoutX="423.0" layoutY="77.0" prefHeight="60.0" prefWidth="434.0" text="Choose your Destination">
          <font>
-            <Font name="Arial Black" size="32.0" />
+            <Font name="Cambria" size="40.0" />
          </font>
       </Label>
-      <RadioButton fx:id="eng" layoutX="59.0" layoutY="37.0" mnemonicParsing="false" onAction="#OnSelect" text="English">
+      <RadioButton fx:id="eng" layoutX="59.0" layoutY="24.0" mnemonicParsing="false" onAction="#OnSelect" text="English" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="ab" layoutX="59.0" layoutY="80.0" mnemonicParsing="false" onAction="#OnSelect" text="Albanian">
+      <RadioButton fx:id="ab" layoutX="59.0" layoutY="64.0" mnemonicParsing="false" onAction="#OnSelect" text="Albanian" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </RadioButton>
-      <Button fx:id="back" layoutX="952.0" layoutY="645.0" mnemonicParsing="false" onAction="#Onback" onKeyPressed="#KeyN" prefHeight="39.0" prefWidth="102.0" text="Back">
+      <Button fx:id="back" layoutX="952.0" layoutY="645.0" mnemonicParsing="false" onAction="#Onback" onKeyPressed="#KeyN" prefHeight="39.0" prefWidth="102.0" style="-fx-background-color: #ab96a7;" text="Back" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="17.0" />
          </font>
@@ -58,4 +62,3 @@
 
    </children>
 </AnchorPane>
-

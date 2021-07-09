@@ -1,3 +1,4 @@
+
 package destination;
 import Info.IFXMLDocumentController;
 import javafx.collections.FXCollections;
@@ -27,8 +28,7 @@ import java.util.Scanner;
 
 
 public class FXMLDocumentController implements Initializable {
-    //-----------------
-  
+
     
       @FXML
   private AnchorPane rootpane;
@@ -51,7 +51,7 @@ static URI p= file.toURI();
     
        
     
-    //---------
+
    
     
     @FXML
@@ -93,10 +93,10 @@ static URI p= file.toURI();
             FCom.setPromptText("Zgjidhni");
             Tcom.setPromptText("Zgjidhni");
             label.setText("Zgjidhni destinacionin tuaj");
-            t1.setText("Për të");
+            t1.setText("Në");
             f1.setText("Nga");
             back.setText("Mbrapa");
-            next.setText("Tjetra");
+            next.setText("Tjetër");
 
 
 
@@ -216,7 +216,7 @@ out.close();
 
 }
 
-@FXML
+    @FXML
     public void KeyB(KeyEvent h) throws IOException{
         if (h.getCode() == KeyCode.ESCAPE) {
             mp.stop();
@@ -266,10 +266,10 @@ private void languageChanger(String x){
                FCom.setPromptText("Zgjidhni");
                Tcom.setPromptText("Zgjidhni");
                label.setText("Zgjidhni destinacionin tuaj");
-               t1.setText("Për të");
+               t1.setText("Në");
                f1.setText("Nga");
                back.setText("Mbrapa");
-               next.setText("Tjetra");
+               next.setText("Tjetër");
            }
 }
 

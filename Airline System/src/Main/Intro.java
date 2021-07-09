@@ -32,6 +32,12 @@ public class Intro extends Application {
          primaryStage.show();
     }
 
+<<<<<<< HEAD
+    /*
+     * @param args the command line arguments
+     */
+=======
+>>>>>>> 271433c6de46b23627c388dfde426784f62bd0e2
     public static void main(String[] args) {
         launch(args);
         

@@ -98,6 +98,7 @@ static URI pi= file.toURI();
     
       
     }
+    
     @FXML
     private void OnSignIn(ActionEvent event) throws IOException {
        
@@ -213,7 +214,7 @@ static URI pi= file.toURI();
             
          
         
-  else if (user.contains("Verona Krasniqi")&&pass.contains("123456")) {
+  else if (user.contains("fiek")&&pass.contains("fiek123")) {
         mp.stop();
 
 
@@ -240,7 +241,7 @@ static URI pi= file.toURI();
             }
          
 
-      else   if (user.contains("Rinesa")&&pass.contains("222222")){
+      else   if (user.contains("up")&&pass.contains("up123")){
            mp.stop();
                 Parent root = FXMLLoader.load(getClass().getResource("/destination/FXMLDocument.fxml"));
                 Stage window= (Stage)Sign.getScene().getWindow();
@@ -248,7 +249,7 @@ static URI pi= file.toURI();
                 window.centerOnScreen();
       }
  
-       else if (user.contains("Sara")&&pass.contains("sarasara")) {
+       else if (user.contains("hello")&&pass.contains("hell123")) {
          mp.stop();
                 Parent root = FXMLLoader.load(getClass().getResource("/destination/FXMLDocument.fxml"));
                 Stage window= (Stage)Sign.getScene().getWindow();

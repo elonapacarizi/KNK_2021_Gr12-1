@@ -1,3 +1,4 @@
+
 package Payments;
 
 import Info.*;
@@ -51,8 +52,7 @@ private AnchorPane ap;
     
     
        
-    
-    //---------
+
     @FXML
     private TextField date,cvv,name,pass, phone;
 
@@ -232,18 +232,18 @@ private AnchorPane ap;
 
     private void languageChanger(String x) {
         if(x.equals("ab")) {
-            name.setPromptText(" emri yt -");
+            name.setPromptText(" Emri");
 
             date.setPromptText("Data");
 
-            pass.setPromptText("fjalëkalimin");
+            pass.setPromptText("Fjalëkalimi");
             phone.setPromptText("Numri i telefonit");
             cpm.setText("Zgjidhni mënyrën tuaj të pagesës");
-            cp.setText("Përfundoni pagesën tuaj");
+            cp.setText("Konfirmoni pagesën tuaj");
             back.setText("Mbrapa");
-            next.setText("Tjetra");
+            next.setText("Tjetër");
             exit.setText(
-                    "dalje");
+                    "dil");
 
             Credit.setText("Kartë krediti / debiti");
 
@@ -259,18 +259,18 @@ private AnchorPane ap;
     private void lang(ActionEvent event) throws IOException {
         if (ab.isSelected()) {
             en.setDisable(true);
-            name.setPromptText(" emri yt -");
+            name.setPromptText("Emri");
 
             date.setPromptText("Data");
 
-            pass.setPromptText("fjalëkalimin");
+            pass.setPromptText("Fjalëkalimin");
             phone.setPromptText("Numri i telefonit");
           cpm.setText("Zgjidhni mënyrën tuaj të pagesës");
-          cp.setText("Përfundoni pagesën tuaj");
+          cp.setText("Konfirmoni pagesën tuaj");
             back.setText("Mbrapa");
-            next.setText("Tjetra");
+            next.setText("Tjetër");
             exit.setText(
-                    "dalje");
+                    "dil");
 
             Credit.setText("Kartë krediti / debiti");
 
