@@ -23,10 +23,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-/**
- *
- * @author freec
- */
+
 public class FXMLDocumentController implements Initializable {
 
     
@@ -56,7 +53,8 @@ public class FXMLDocumentController implements Initializable {
      @Override
      
     public void initialize(URL url, ResourceBundle rb) {
-
+//main.minHeight(720);
+//main.maxWidth(1200);
     } 
     
     
@@ -89,6 +87,7 @@ public class FXMLDocumentController implements Initializable {
          window.setScene(new Scene(root));
          window.centerOnScreen();
     }
+    
      @FXML
     private void onAbout(ActionEvent event) throws IOException {
     
@@ -100,72 +99,6 @@ public class FXMLDocumentController implements Initializable {
     private void onSelect(ActionEvent event)throws IOException {
          if(en.isSelected()){
              FileOutputStream out = null;
-             
-              File filet = new File("C:/Program Files/Airline System/src/Text_Files/languages.txt");
-
-             String f=filet.getAbsolutePath();
-
-             String text = "en";
-             byte b[] = text.getBytes();
-
-             String outputFileName = System.getProperty("user.home",
-                     File.separatorChar + "home"
-                             + File.separatorChar + "monica")
-                     + File.separatorChar + "text.txt";
-             out = new FileOutputStream(f);
-             out.write(b);
-             out.close();
-
-         }
-        if(ab.isSelected()){
-    l1.setText("Sistemi i Rezervimit të Biletave të Linjës Ajrore");
-    l2.setText(
-            "Regjistrohuni për të marrë 35% zbritje në biletat e fluturimit");
-
-    about.setText(
-            "rreth");
-    help.setText("ndihmë");
-    welcome.setText("mirëseardhje si mysafir");
-    register.setText("Regjistrohuni");
-    admin.setText("administratori");
-    skip.setText("dalje");
-
-    FileOutputStream out = null;
-File filet = new File("C:/Program Files/Airline System/src/Text_Files/languages.txt");
-
-    String f=filet.getAbsolutePath();
-
-    String text = "ab";
-    byte b[] = text.getBytes();
-
-    String outputFileName = System.getProperty("user.home",
-            File.separatorChar + "home"
-                    + File.separatorChar + "monica")
-            + File.separatorChar + "text.txt";
-    out = new FileOutputStream(f);
-    out.write(b);
-    out.close();
 
 
-}
-
-    }
-
-     @FXML
-    private void OnHelp(ActionEvent event) {
-      
-
-    }
-    
-    
-     @FXML
-    private void onAdmin(ActionEvent event) {
-
-  
-    }
-    
-    
-    
-    
-}
     
