@@ -153,3 +153,55 @@ private AnchorPane ap;
             out.write(b);
             out.close();
         }
+        if(Paypal.isSelected()) {
+          Credit.setDisable(true); Net.setDisable(true); Google.setDisable(true);
+          date.setDisable(true);
+          Cdate.setDisable(true);
+          cvv.setDisable(true);
+          FileOutputStream out = null;
+          File filet = new File("C:/Program Files/Airline System/src/Text_Files/payment.txt");
+
+          String f=filet.getAbsolutePath();
+
+          String text ="Paypal";
+          byte b[] = text.getBytes();
+
+          String outputFileName = System.getProperty("user.home",
+                  File.separatorChar + "home"
+                          + File.separatorChar + "monica")
+                  + File.separatorChar + "text.txt";
+          out = new FileOutputStream(f);
+          out.write(b);
+          out.close();
+      }
+      if(Credit.isSelected()) {
+          Google.setDisable(true); Net.setDisable(true); Paypal.setDisable(true);
+          FileOutputStream out = null;
+          File filet = new File("C:/Program Files/Airline System/src/Text_Files/payment.txt");
+
+          String f=filet.getAbsolutePath();
+
+          String text = "Credit Card";
+          byte b[] = text.getBytes();
+
+          String outputFileName = System.getProperty("user.home",
+                  File.separatorChar + "home"
+                          + File.separatorChar + "monica")
+                  + File.separatorChar + "text.txt";
+          out = new FileOutputStream(f);
+          out.write(b);
+          out.close();
+      }
+
+  }
+
+
+  @FXML
+  private void Onnext(ActionEvent event) throws IOException {
+
+      Parent root = FXMLLoader.load(getClass().getResource("/Seats/FXMLDocument.fxml"));
+      Stage window= (Stage)next.getScene().getWindow();
+      window.setScene(new Scene(root));
+      window.centerOnScreen();
+    
+  }
