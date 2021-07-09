@@ -205,3 +205,81 @@ private AnchorPane ap;
       window.centerOnScreen();
     
   }
+  @FXML
+    private void OnExit(ActionEvent event) throws IOException {
+
+        Stage stage = (Stage) exit.getScene().getWindow();
+
+        stage.close();
+
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+      ab.setVisible(false);
+      en.setVisible(false);
+     ap.setBackground(Background.EMPTY);
+        File D = new File("C:/Program Files/Airline System/src/Text_Files/languages.txt");
+
+        try (Scanner scanner = new Scanner(D)) {
+
+            while (scanner.hasNext())
+
+
+                languageChanger(scanner.next().toString());
+
+
+        }catch (Exception e) { e.printStackTrace(); }
+       }
+
+    private void languageChanger(String x) {
+        if(x.equals("ab")) {
+            name.setPromptText(" emri yt -");
+
+            date.setPromptText("Data");
+
+            pass.setPromptText("fjalëkalimin");
+            phone.setPromptText("Numri i telefonit");
+            cpm.setText("Zgjidhni mënyrën tuaj të pagesës");
+            cp.setText("Përfundoni pagesën tuaj");
+            back.setText("Mbrapa");
+            next.setText("Tjetra");
+            exit.setText(
+                    "dalje");
+
+            Credit.setText("Kartë krediti / debiti");
+
+
+
+        }}
+
+
+
+
+
+    @FXML
+    private void lang(ActionEvent event) throws IOException {
+        if (ab.isSelected()) {
+            en.setDisable(true);
+            name.setPromptText(" emri yt -");
+
+            date.setPromptText("Data");
+
+            pass.setPromptText("fjalëkalimin");
+            phone.setPromptText("Numri i telefonit");
+          cpm.setText("Zgjidhni mënyrën tuaj të pagesës");
+          cp.setText("Përfundoni pagesën tuaj");
+            back.setText("Mbrapa");
+            next.setText("Tjetra");
+            exit.setText(
+                    "dalje");
+
+            Credit.setText("Kartë krediti / debiti");
+
+        }
+
+
+    }
+
+
+    }
