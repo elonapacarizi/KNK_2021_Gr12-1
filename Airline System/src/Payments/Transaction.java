@@ -32,7 +32,6 @@ public class Transaction extends Application {
         };
         scene.getAccelerators().put(kc1, rn1);
 
-        
         KeyCombination kc2= new KeyCodeCombination(KeyCode.B, KeyCodeCombination.CONTROL_DOWN);
         Runnable rn2 = ()-> {
             try {
@@ -61,9 +60,7 @@ public class Transaction extends Application {
         primaryStage.show();
     }
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
         launch(args);
         
