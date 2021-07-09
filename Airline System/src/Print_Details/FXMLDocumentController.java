@@ -1,3 +1,4 @@
+
 package Print_Details;
 
 import Payments.*;
@@ -29,23 +30,19 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.Pane;
 
+
+public class FXMLDocumentController implements Initializable {
+
+    
       @FXML
   private Pane rootpane;
-
-
     
     
     
    
 @FXML
 private AnchorPane ap;
-   
-    
-    
-    
-    
-       
-    
+
     @FXML
     public Label tc,ti,n,c,p,pa,t,m,f;
     
@@ -53,8 +50,8 @@ private AnchorPane ap;
    private Button back;
    @FXML
    private Button exit;
-
- @FXML
+  
+       @FXML
     private void Onback(ActionEvent event) throws IOException {
            Parent root = FXMLLoader.load(getClass().getResource("/Booking_Interface/FXMLDocument.fxml"));
            Stage window= (Stage)back.getScene().getWindow();
@@ -88,8 +85,9 @@ private AnchorPane ap;
         File time= new File("C:/Program Files/Airline System/src/Text_Files/time.txt");
 
         File passeneger = new File("C:/Program Files/Airline System/src/Text_Files/passenger.txt");
-          
-            try (Scanner scanner = new Scanner(Des)) {
+
+
+        try (Scanner scanner = new Scanner(Des)) {
 
             while (scanner.hasNext())
                 f.setText((scanner.next()));
@@ -109,7 +107,7 @@ private AnchorPane ap;
                 m.setText((scanner.next()));
 
         }catch (Exception e) { e.printStackTrace(); }
-            try (Scanner scanner = new Scanner(name)) {
+        try (Scanner scanner = new Scanner(name)) {
 
             while (scanner.hasNext())
                 n.setText((scanner.next()));
@@ -149,6 +147,11 @@ private AnchorPane ap;
         }catch (Exception e) { e.printStackTrace(); }
 
 
+
+
+
+
+
     }
 
 
@@ -156,14 +159,4 @@ private AnchorPane ap;
 
                                
 
-
-          
-
-          
-          
-
-
-
-
-
-
+    

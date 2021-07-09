@@ -1,9 +1,6 @@
 
 package Print_Details;
 
-import Payments.*;
-package Print_Details;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -15,10 +12,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 
-/**
- *
- * @author freec
- */
+
 public class Printing_press extends Application {
    
     @Override
@@ -61,9 +55,7 @@ public class Printing_press extends Application {
     }
 
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
         launch(args);
         
