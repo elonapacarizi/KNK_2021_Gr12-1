@@ -1,72 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="rootpane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Booking_Interface.FXMLDocumentController">
+<AnchorPane fx:id="rootpane" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Booking_Interface.FXMLDocumentController">
    <children>
       <Pane id="AnchorPane">
          <children>
             <ImageView fx:id="main" fitHeight="700.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="file:/C:/Program%20Files/Airline%20System/src/Booking_Interface/Home.jpg" />
+                  <Image url="@Home.jpg" />
                </image>
             </ImageView>
-            <Button fx:id="skip" layoutX="760.0" layoutY="515.0" mnemonicParsing="false" onAction="#Onskip" prefHeight="30.0" prefWidth="118.0" text="Exit">
+            <Button fx:id="skip" layoutX="1092.0" layoutY="602.0" mnemonicParsing="false" onAction="#Onskip" prefHeight="45.0" prefWidth="160.0" text="Exit" textFill="#1c7eba">
                <font>
-                  <Font name="Leelawadee UI Bold" size="18.0" />
+                  <Font name="Cambria" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="register" layoutX="835.0" layoutY="379.0" mnemonicParsing="false" onAction="#OnRegister" prefHeight="52.0" prefWidth="190.0" text="Register" textFill="#b53e1a">
+            <Button fx:id="register" layoutX="1003.0" layoutY="195.0" mnemonicParsing="false" onAction="#OnRegister" prefHeight="52.0" prefWidth="160.0" text="Register" textFill="#1c7eba">
                <font>
                   <Font name="Cambria Math" size="27.0" />
                </font>
             </Button>
-            <Button fx:id="login" layoutX="620.0" layoutY="387.0" mnemonicParsing="false" onAction="#OnLogin" prefHeight="28.0" prefWidth="127.0" text="Login" textFill="#b53e1a">
+            <Button fx:id="login" layoutX="819.0" layoutY="195.0" mnemonicParsing="false" onAction="#OnLogin" prefHeight="52.0" prefWidth="149.0" text="Login" textFill="#1c7eba">
                <font>
                   <Font name="Cambria Math" size="27.0" />
                </font>
             </Button>
-            <Button fx:id="help" layoutX="340.0" layoutY="627.0" mnemonicParsing="false" onAction="#OnHelp" prefHeight="39.0" prefWidth="127.0" text="Help" textFill="#3ad121">
+            <Button fx:id="welcome" layoutX="819.0" layoutY="71.0" mnemonicParsing="false" onAction="#OnWelcome" prefHeight="68.0" prefWidth="340.0" text="Welcome as Guest" textFill="#1c7eba">
                <font>
-                  <Font name="SansSerif Bold Italic" size="22.0" />
+                  <Font name="Cambria" size="36.0" />
                </font>
             </Button>
-            <Button fx:id="welcome" layoutX="592.0" layoutY="207.0" mnemonicParsing="false" onAction="#OnWelcome" prefHeight="62.0" prefWidth="353.0" text="Welcome as Guest" textFill="#163bbf" underline="true">
+            <Button fx:id="admin" layoutX="745.0" layoutY="602.0" mnemonicParsing="false" onAction="#onAdmin" prefHeight="45.0" prefWidth="160.0" text="Admin" textFill="#1c7eba">
                <font>
-                  <Font name="Ink Free" size="27.0" />
+                  <Font name="Cambria" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="admin" layoutX="300.0" layoutY="446.0" mnemonicParsing="false" onAction="#onAdmin" prefHeight="62.0" prefWidth="190.0" text="Admin" textFill="#242326">
+            <RadioButton fx:id="ab" layoutX="55.0" layoutY="35.0" mnemonicParsing="false" onAction="#onSelect" text="Albanian" textFill="WHITE">
                <font>
-                  <Font name="Ink Free" size="27.0" />
-               </font>
-            </Button>
-            <Button fx:id="about" layoutX="741.0" layoutY="624.0" mnemonicParsing="false" onAction="#onAbout" prefHeight="48.0" prefWidth="163.0" text="About us" textFill="#3ad121">
-               <font>
-                  <Font name="SansSerif Bold Italic" size="22.0" />
-               </font>
-            </Button>
-            <Label fx:id="l1" layoutX="244.0" layoutY="52.0" prefHeight="77.0" prefWidth="783.0" text="Airline Ticket Reservation System " textFill="#eeeeee">
-               <font>
-                  <Font name="Comic Sans MS" size="44.0" />
-               </font>
-            </Label>
-            <Label fx:id="l2" layoutX="116.0" layoutY="543.0" prefHeight="48.0" prefWidth="520.0" text="Register To get 35% Discount on Flight tickets">
-               <font>
-                  <Font name="Comic Sans MS Bold Italic" size="22.0" />
-               </font>
-            </Label>
-            <RadioButton fx:id="ab" layoutX="55.0" layoutY="35.0" mnemonicParsing="false" onAction="#onSelect" text="Albanian">
-               <font>
-                  <Font name="System Bold Italic" size="19.0" />
+                  <Font name="System Bold Italic" size="14.0" />
                </font>
             </RadioButton>
-            <RadioButton fx:id="en" layoutX="55.0" layoutY="74.0" mnemonicParsing="false" onAction="#onSelect" text="English">
+            <RadioButton fx:id="en" layoutX="55.0" layoutY="71.0" mnemonicParsing="false" onAction="#onSelect" text="English" textFill="WHITE">
                <font>
-                  <Font name="System Bold Italic" size="19.0" />
+                  <Font name="System Bold Italic" size="14.0" />
                </font>
             </RadioButton>
             
@@ -74,3 +57,4 @@
       </Pane>
    </children>
 </AnchorPane>
+
