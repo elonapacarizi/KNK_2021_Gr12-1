@@ -12,78 +12,87 @@
             <Image url="file:/C:/Program%20Files/Airline%20System/src/Payments/pay.jpg" />
          </image>
       </ImageView>
-      <Button fx:id="next" layoutX="1015.0" layoutY="610.0" mnemonicParsing="false" onAction="#Onnext" prefHeight="50.0" prefWidth="101.0" text="Next">
+      <Button fx:id="next" layoutX="1015.0" layoutY="610.0" mnemonicParsing="false" onAction="#Onnext" onKeyPressed="#KeysN" prefHeight="50.0" prefWidth="101.0" text="Next">
          <font>
             <Font name="System Bold Italic" size="23.0" />
          </font>
       </Button>
-      <TextField layoutX="691.0" layoutY="326.0" prefHeight="47.0" prefWidth="191.0" promptText="Your Name">
+      <TextField fx:id="name" layoutX="691.0" layoutY="326.0" prefHeight="47.0" prefWidth="191.0" promptText="Your Name">
          <font>
             <Font name="Monospaced Bold Italic" size="19.0" />
          </font>
       </TextField>
-      <Label layoutX="217.0" layoutY="48.0" text="Complete Your Payment" textFill="#15305e" underline="true">
+      <Label fx:id="cp" layoutX="217.0" layoutY="48.0" text="Complete Your Payment" textFill="#15305e" underline="true">
          <font>
             <Font name="Ink Free" size="32.0" />
          </font>
       </Label>
-      <Button fx:id="back" layoutX="65.0" layoutY="597.0" mnemonicParsing="false" onAction="#Onback" text="Back ">
+      <Button fx:id="back" layoutX="65.0" layoutY="597.0" mnemonicParsing="false" onAction="#Onback" onKeyPressed="#KeysN" text="Back ">
          <font>
             <Font name="Franklin Gothic Medium Italic" size="20.0" />
          </font>
       </Button>
-      <TextField layoutX="692.0" layoutY="471.0" prefHeight="47.0" prefWidth="130.0" promptText="Date">
+      <TextField fx:id="date" layoutX="692.0" layoutY="471.0" prefHeight="47.0" prefWidth="130.0" promptText="Date">
          <font>
             <Font name="Monospaced Bold Italic" size="19.0" />
          </font>
       </TextField>
-      <TextField layoutX="786.0" layoutY="410.0" prefHeight="38.0" prefWidth="191.0" promptText="Phone Number">
-
+      <TextField fx:id="phone" layoutX="786.0" layoutY="410.0" prefHeight="38.0" prefWidth="191.0" promptText="Phone Number">
          <font>
             <Font name="Monospaced Bold Italic" size="19.0" />
          </font>
       </TextField>
-      <DatePicker layoutX="849.0" layoutY="480.0" prefHeight="38.0" prefWidth="130.0" />
-      <Button layoutX="498.0" layoutY="543.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="106.0" text="Exit">
+      <DatePicker fx:id="Cdate" layoutX="849.0" layoutY="480.0" onAction="#OnSelect" prefHeight="38.0" prefWidth="130.0" />
+      <Button fx:id="exit" layoutX="498.0" layoutY="543.0" mnemonicParsing="false" onAction="#OnExit" onKeyPressed="#KeysN" prefHeight="38.0" prefWidth="106.0" text="Exit">
          <font>
             <Font name="System Bold Italic" size="21.0" />
          </font>
       </Button>
-      <RadioButton layoutX="779.0" layoutY="150.0" mnemonicParsing="false" text="Credit/ Debit Card" textFill="#cd28a6">
+      <RadioButton fx:id="Credit" layoutX="779.0" layoutY="150.0" mnemonicParsing="false" onAction="#OnBSelect" text="Credit/ Debit Card" textFill="#cd28a6">
          <font>
             <Font name="SansSerif Bold Italic" size="20.0" />
          </font>
       </RadioButton>
-      <RadioButton layoutX="767.0" layoutY="209.0" mnemonicParsing="false" text="Google Pay" textFill="#e42841">
+      <RadioButton fx:id="Google" layoutX="767.0" layoutY="209.0" mnemonicParsing="false" onAction="#OnBSelect" text="Google Pay" textFill="#e42841">
          <font>
             <Font name="SansSerif Bold Italic" size="20.0" />
          </font>
       </RadioButton>
-      <RadioButton layoutX="791.0" layoutY="101.0" mnemonicParsing="false" text="NetBanking" textFill="#598626">
+      <RadioButton fx:id="Net" layoutX="791.0" layoutY="101.0" mnemonicParsing="false" onAction="#OnBSelect" text="NetBanking" textFill="#598626">
          <font>
             <Font name="SansSerif Bold Italic" size="20.0" />
          </font>
       </RadioButton>
-      <RadioButton layoutX="764.0" layoutY="264.0" mnemonicParsing="false" text="Paypal" textFill="#2eb29e">
+      <RadioButton fx:id="Paypal" layoutX="764.0" layoutY="264.0" mnemonicParsing="false" onAction="#OnBSelect" text="Paypal" textFill="#2eb29e">
          <font>
             <Font name="SansSerif Bold Italic" size="20.0" />
          </font>
       </RadioButton>
-      <Label layoutX="753.0" layoutY="35.0" text="Choose payment Mode :-" textFill="#e44040" underline="true">
+      <Label fx:id="cpm" layoutX="712.0" layoutY="24.0" prefHeight="38.0" prefWidth="319.0" text="Choose payment Mode :-" textFill="#e44040" underline="true">
          <font>
             <Font name="Monospaced Bold Italic" size="21.0" />
          </font>
       </Label>
-      <TextField layoutX="693.0" layoutY="546.0" prefHeight="38.0" prefWidth="121.0" promptText="CVV">
+      <TextField fx:id="cvv" layoutX="693.0" layoutY="546.0" prefHeight="38.0" prefWidth="121.0" promptText="CVV">
          <font>
             <Font name="Monospaced Bold Italic" size="20.0" />
          </font>
       </TextField>
-      <PasswordField layoutX="840.0" layoutY="543.0" prefHeight="45.0" prefWidth="148.0" promptText="Password">
+      <PasswordField fx:id="pass" layoutX="840.0" layoutY="543.0" prefHeight="45.0" prefWidth="148.0" promptText="Password">
          <font>
             <Font name="Monospaced Bold Italic" size="20.0" />
          </font>
       </PasswordField>
+      <RadioButton fx:id="en" layoutX="44.0" layoutY="164.0" mnemonicParsing="false" onAction="#lang" text="English">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="ab" layoutX="44.0" layoutY="201.0" mnemonicParsing="false" onAction="#lang" text="Albanian">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </RadioButton>
       
    </children>
 </AnchorPane>

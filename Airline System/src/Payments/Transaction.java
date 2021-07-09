@@ -11,10 +11,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 
-/**
- *
- * @author freec
- */
+
 public class Transaction extends Application {
    
     @Override
