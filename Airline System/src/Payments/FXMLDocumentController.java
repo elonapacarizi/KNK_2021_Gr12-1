@@ -92,34 +92,64 @@ private AnchorPane ap;
     }
     
     @FXML
-   private Button back;
-   @FXML
-   private Button next;
-  
-       @FXML
     private void Onback(ActionEvent event) throws IOException {
            Parent root = FXMLLoader.load(getClass().getResource("/Booking_Interface/FXMLDocument.fxml"));
            Stage window= (Stage)back.getScene().getWindow();
            window.setScene(new Scene(root));
            window.centerOnScreen();
     }
-    
     @FXML
-    private void Onnext(ActionEvent event) throws IOException {
+    private void OnSelect(ActionEvent event) throws IOException
+    {
 
-        Parent root = FXMLLoader.load(getClass().getResource("/Seats/FXMLDocument.fxml"));
-        Stage window= (Stage)next.getScene().getWindow();
-        window.setScene(new Scene(root));
-        window.centerOnScreen();
-      
+
+        LocalDate i = Cdate.getValue();
+        date.setText(i.toString());
+
+
     }
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-      
-     ap.setBackground(Background.EMPTY);
-       }
-    
-                               
+    @FXML
+    private void OnBSelect(ActionEvent event) throws IOException
+    {
+  if(Google.isSelected()) {
+      Credit.setDisable(true); Net.setDisable(true); Paypal.setDisable(true);
+      date.setDisable(true);
+      Cdate.setDisable(true);
+      cvv.setDisable(true);
+      FileOutputStream out = null;
+      File filet = new File("C:/Program Files/Airline System/src/Text_Files/payment.txt");
 
-    
-}
+      String f=filet.getAbsolutePath();
+
+      String text = "Google Pay";
+      byte b[] = text.getBytes();
+
+      String outputFileName = System.getProperty("user.home",
+              File.separatorChar + "home"
+                      + File.separatorChar + "monica")
+              + File.separatorChar + "text.txt";
+      out = new FileOutputStream(f);
+      out.write(b);
+      out.close();
+  }
+        if(Net.isSelected()) {
+            Credit.setDisable(true); Google.setDisable(true); Paypal.setDisable(true);
+            date.setDisable(true);
+            Cdate.setDisable(true);
+            cvv.setDisable(true);
+            FileOutputStream out = null;
+            File filet = new File("C:/Program Files/Airline System/src/Text_Files/payment.txt");
+
+            String f=filet.getAbsolutePath();
+
+            String text = "NetBanking";
+            byte b[] = text.getBytes();
+
+            String outputFileName = System.getProperty("user.home",
+                    File.separatorChar + "home"
+                            + File.separatorChar + "monica")
+                    + File.separatorChar + "text.txt";
+            out = new FileOutputStream(f);
+            out.write(b);
+            out.close();
+        }
