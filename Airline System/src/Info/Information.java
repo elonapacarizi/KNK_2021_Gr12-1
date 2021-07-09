@@ -24,6 +24,7 @@ public class Information extends Application {
 
 
         Scene scene = new Scene(root);
+
         KeyCombination kc= new KeyCodeCombination(KeyCode.Z, KeyCodeCombination.CONTROL_DOWN);
         Runnable rn = ()-> System.exit(0);
         scene.getAccelerators().put(kc, rn);
@@ -40,6 +41,7 @@ public class Information extends Application {
         };
         scene.getAccelerators().put(kc1, rn1);
 
+
         KeyCombination kc2= new KeyCodeCombination(KeyCode.B, KeyCodeCombination.CONTROL_DOWN);
         Runnable rn2 = ()-> {
             try {
@@ -53,7 +55,7 @@ public class Information extends Application {
 
 
         primaryStage.setScene(scene);
-        primaryStage.show();
+         primaryStage.show();
     }
     public void start1(Stage primaryStage) throws Exception{
         Parent root1 = FXMLLoader.load(getClass().getResource("/Payments/FXMLDocument.fxml"));
@@ -70,9 +72,6 @@ public class Information extends Application {
 
     }
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         launch(args);
         

@@ -1,6 +1,7 @@
 
 package Info;
 
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -17,32 +18,34 @@ import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import java.io.FileOutputStream;
+
 import java.io.File;
-import java.time.LocalDate;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URL;
-import java.util.Scanner;
+import java.time.LocalDate;
 import java.util.ResourceBundle;
+import java.util.Scanner;
+
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.Pane;
 
 
-public class FXMLDocumentController implements Initializable {
-    //-----------------
-  
+public class IFXMLDocumentController implements Initializable {
+
     
       @FXML
   private Pane rootpane;
-    
-    
+
     
    
 @FXML
 private AnchorPane ap;
-   public static int x=0;
+   
+    
+    public static int x=0;
     
     @FXML
     private TextField SClass,name,phone,time,pass ;
@@ -54,19 +57,13 @@ private AnchorPane ap;
       private DatePicker  Cdate;
     @FXML
     private RadioButton ab,en;
-
-    
-    
-    
-    
-  
-    
     @FXML
    private Button back;
    @FXML
    private Button next;
-  
-     public void KeyN(KeyEvent event) throws IOException{
+
+    @FXML
+    public void KeyN(KeyEvent event) throws IOException{
         if (event.getCode() == KeyCode.ENTER) {
 
             Parent root = FXMLLoader.load(getClass().getResource("/Payments/FXMLDocument.fxml"));
@@ -74,8 +71,6 @@ private AnchorPane ap;
             window.setScene(new Scene(root));
             window.centerOnScreen();
         }
-
-        
         else if(event.getCode() == KeyCode.ESCAPE){
 
             Parent root = FXMLLoader.load(getClass().getResource("/destination/FXMLDocument.fxml"));
@@ -83,10 +78,7 @@ private AnchorPane ap;
             window.setScene(new Scene(root));
             window.centerOnScreen();
         }
-        
     }
-  
-  
        @FXML
     private void Onback(ActionEvent event) throws IOException {
            Parent root = FXMLLoader.load(getClass().getResource("/Booking_Interface/FXMLDocument.fxml"));
@@ -115,12 +107,12 @@ private AnchorPane ap;
     }
 
 
-    public int value(int i){
-        return i;
-    }
-
+public int value(int i){
+   return i;
+}
     @FXML
     private void Onnext(ActionEvent event) throws IOException {
+
 
 
         FileOutputStream out = null;
@@ -210,14 +202,15 @@ private AnchorPane ap;
         Stage window= (Stage)next.getScene().getWindow();
         window.setScene(new Scene(root));
         window.centerOnScreen();
-
+      
     }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-      
+        ObservableList<String> list = FXCollections.observableArrayList("Bussiness Class","Economy Class");
+
+        CClass.setItems(list);
      ap.setBackground(Background.EMPTY);
-       }
-    ab.setVisible(false);
+     ab.setVisible(false);
      en.setVisible(false);
         File D = new File("C:/Program Files/Airline System/src/Text_Files/languages.txt");
 
@@ -234,37 +227,34 @@ private AnchorPane ap;
        }
     private void languageChanger(String x) {
         if(x.equals("ab")){
-        name.setPromptText(" emri yt -");
-        SClass.setPromptText("Zgjidhni klasën tuaj");
+        name.setPromptText(" Emri");
+        SClass.setPromptText("Zgjidhni klasën e udhëtimit");
         date.setPromptText("Data");
         CClass.setPromptText(
                 "zgjedh klasën");
-        pass.setPromptText("Jo. I udhëtarëve");
+        pass.setPromptText("Nr. i udhëtarëve");
         phone.setPromptText("Numri i telefonit");
         time.setPromptText("Koha");
         back.setText("Mbrapa");
-        next.setText("Tjetra");
+        next.setText("Tjetër");
     }}
     @FXML
     private void OnLang(ActionEvent event) throws IOException {
         if (ab.isSelected()) {
             en.setDisable(true);
-            name.setPromptText(" emri yt -");
-            SClass.setPromptText("Zgjidhni klasën tuaj");
+            name.setPromptText("Emri");
+            SClass.setPromptText("Zgjidhni klasën e udhëtimit");
             date.setPromptText("Data");
             CClass.setPromptText(
                     "zgjedh klasën");
-            pass.setPromptText("Jo. I udhëtarëve");
+            pass.setPromptText("Nr. I udhëtarëve");
             phone.setPromptText("Numri i telefonit");
             time.setPromptText("Koha");
             back.setText("Mbrapa");
-            next.setText("Tjetra");
+            next.setText("Tjetër");
         }
 
 
     }
-	
-                               
-
     
 }
