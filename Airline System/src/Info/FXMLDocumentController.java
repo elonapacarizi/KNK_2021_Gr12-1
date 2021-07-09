@@ -217,7 +217,53 @@ private AnchorPane ap;
       
      ap.setBackground(Background.EMPTY);
        }
-    
+    ab.setVisible(false);
+     en.setVisible(false);
+        File D = new File("C:/Program Files/Airline System/src/Text_Files/languages.txt");
+
+        try (Scanner scanner = new Scanner(D)) {
+
+            while (scanner.hasNext())
+
+
+                languageChanger(scanner.next().toString());
+
+
+        }catch (Exception e) { e.printStackTrace(); }
+
+       }
+    private void languageChanger(String x) {
+        if(x.equals("ab")){
+        name.setPromptText(" emri yt -");
+        SClass.setPromptText("Zgjidhni klasën tuaj");
+        date.setPromptText("Data");
+        CClass.setPromptText(
+                "zgjedh klasën");
+        pass.setPromptText("Jo. I udhëtarëve");
+        phone.setPromptText("Numri i telefonit");
+        time.setPromptText("Koha");
+        back.setText("Mbrapa");
+        next.setText("Tjetra");
+    }}
+    @FXML
+    private void OnLang(ActionEvent event) throws IOException {
+        if (ab.isSelected()) {
+            en.setDisable(true);
+            name.setPromptText(" emri yt -");
+            SClass.setPromptText("Zgjidhni klasën tuaj");
+            date.setPromptText("Data");
+            CClass.setPromptText(
+                    "zgjedh klasën");
+            pass.setPromptText("Jo. I udhëtarëve");
+            phone.setPromptText("Numri i telefonit");
+            time.setPromptText("Koha");
+            back.setText("Mbrapa");
+            next.setText("Tjetra");
+        }
+
+
+    }
+	
                                
 
     
