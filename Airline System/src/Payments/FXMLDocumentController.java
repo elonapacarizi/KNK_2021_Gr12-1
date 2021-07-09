@@ -1,4 +1,3 @@
-
 package Payments;
 
 import Info.*;
@@ -90,8 +89,7 @@ private AnchorPane ap;
             System.exit(0);
         }
     }
-    
-    @FXML
+       @FXML
     private void Onback(ActionEvent event) throws IOException {
            Parent root = FXMLLoader.load(getClass().getResource("/Booking_Interface/FXMLDocument.fxml"));
            Stage window= (Stage)back.getScene().getWindow();
@@ -154,58 +152,58 @@ private AnchorPane ap;
             out.close();
         }
         if(Paypal.isSelected()) {
-          Credit.setDisable(true); Net.setDisable(true); Google.setDisable(true);
-          date.setDisable(true);
-          Cdate.setDisable(true);
-          cvv.setDisable(true);
-          FileOutputStream out = null;
-          File filet = new File("C:/Program Files/Airline System/src/Text_Files/payment.txt");
+            Credit.setDisable(true); Net.setDisable(true); Google.setDisable(true);
+            date.setDisable(true);
+            Cdate.setDisable(true);
+            cvv.setDisable(true);
+            FileOutputStream out = null;
+            File filet = new File("C:/Program Files/Airline System/src/Text_Files/payment.txt");
 
-          String f=filet.getAbsolutePath();
+            String f=filet.getAbsolutePath();
 
-          String text ="Paypal";
-          byte b[] = text.getBytes();
+            String text ="Paypal";
+            byte b[] = text.getBytes();
 
-          String outputFileName = System.getProperty("user.home",
-                  File.separatorChar + "home"
-                          + File.separatorChar + "monica")
-                  + File.separatorChar + "text.txt";
-          out = new FileOutputStream(f);
-          out.write(b);
-          out.close();
-      }
-      if(Credit.isSelected()) {
-          Google.setDisable(true); Net.setDisable(true); Paypal.setDisable(true);
-          FileOutputStream out = null;
-          File filet = new File("C:/Program Files/Airline System/src/Text_Files/payment.txt");
+            String outputFileName = System.getProperty("user.home",
+                    File.separatorChar + "home"
+                            + File.separatorChar + "monica")
+                    + File.separatorChar + "text.txt";
+            out = new FileOutputStream(f);
+            out.write(b);
+            out.close();
+        }
+        if(Credit.isSelected()) {
+            Google.setDisable(true); Net.setDisable(true); Paypal.setDisable(true);
+            FileOutputStream out = null;
+            File filet = new File("C:/Program Files/Airline System/src/Text_Files/payment.txt");
 
-          String f=filet.getAbsolutePath();
+            String f=filet.getAbsolutePath();
 
-          String text = "Credit Card";
-          byte b[] = text.getBytes();
+            String text = "Credit Card";
+            byte b[] = text.getBytes();
 
-          String outputFileName = System.getProperty("user.home",
-                  File.separatorChar + "home"
-                          + File.separatorChar + "monica")
-                  + File.separatorChar + "text.txt";
-          out = new FileOutputStream(f);
-          out.write(b);
-          out.close();
-      }
+            String outputFileName = System.getProperty("user.home",
+                    File.separatorChar + "home"
+                            + File.separatorChar + "monica")
+                    + File.separatorChar + "text.txt";
+            out = new FileOutputStream(f);
+            out.write(b);
+            out.close();
+        }
 
-  }
+    }
 
 
-  @FXML
-  private void Onnext(ActionEvent event) throws IOException {
+    @FXML
+    private void Onnext(ActionEvent event) throws IOException {
 
-      Parent root = FXMLLoader.load(getClass().getResource("/Seats/FXMLDocument.fxml"));
-      Stage window= (Stage)next.getScene().getWindow();
-      window.setScene(new Scene(root));
-      window.centerOnScreen();
-    
-  }
-  @FXML
+        Parent root = FXMLLoader.load(getClass().getResource("/Seats/FXMLDocument.fxml"));
+        Stage window= (Stage)next.getScene().getWindow();
+        window.setScene(new Scene(root));
+        window.centerOnScreen();
+      
+    }
+    @FXML
     private void OnExit(ActionEvent event) throws IOException {
 
         Stage stage = (Stage) exit.getScene().getWindow();
