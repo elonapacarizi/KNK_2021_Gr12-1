@@ -11,10 +11,7 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-/**
- *
- * @author freec
- */
+
 public class Intro extends Application {
    
     @Override
