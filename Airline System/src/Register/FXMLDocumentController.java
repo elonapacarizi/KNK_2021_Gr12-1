@@ -155,7 +155,7 @@ RPass.setText(FakePass.getText());
           message("Please do enter Captcha");
         }     
         else if(!Cap.getText().equals("9xyz")){
-                message("InValid Captcha entered");
+                message("Invalid code entered");
            }
         else if (RNick.getText().trim().isEmpty()){
               message("Enter your nickname Please");
@@ -170,5 +170,70 @@ RPass.setText(FakePass.getText());
     
     }
     
+private void message(String x){
+  Alert alert = new Alert(Alert.AlertType.INFORMATION);
+          alert.setContentText(x);
+alert.show();
+
+
+}
+     @FXML
+    private void OnSignIn(ActionEvent event) throws IOException, Exception {
+  if(RUser.getText().trim().isEmpty()||
+     RPass.getText().trim().isEmpty()
+     ||RNick.getText().trim().isEmpty()
+     ||Cap.getText().trim().isEmpty()
+          || !Cap.getText().equals("9xyz"))
+  {
+       
+        message("No field Should be left empty");    
+        }
+  else{
+      mp.stop();
+      String  JBBC_DRIVER="com.mysql.jdbc.Driver";
+      String  DB_URL="jdbc:mysql://localhost:3306/system";
+      String DB_USER="root";
+      String DB_PASS="Verona2001";
+      Connection con=null;
+           try
+           {
+               Class.forName("com.mysql.jdbc.Driver");
+               con= DriverManager.getConnection(DB_URL,DB_USER,DB_PASS);
+               PreparedStatement st;
+               ResultSet rs;
+               boolean username_exist=false;
+
+               String query="insert into details(Name,Password,phone,Unicode) Values(?,?,?,?)";
+               PreparedStatement pdt = con.prepareStatement(query);
+               pdt.setString(1, RUser.getText());
+               pdt.setString(2, RPass.getText());
+               pdt.setInt(3, 898202902);
+               pdt.setInt(4,23);
+               //put the rest of the code
+               int n1=pdt.executeUpdate();
+               {
+                  System.out.println("Inserted Successfully!");
+               }
+           }
+           catch(Exception e)
+           {  System.out.println(e);   }
+      Parent root = FXMLLoader.load(getClass().getResource("/Login/RFXMLDocument.fxml"));
+      Stage window= (Stage)RSignIn.getScene().getWindow();
+      window.setScene(new Scene(root));
+      window.centerOnScreen();
+
+
+//
+    }
+    }
+    public String movingU(int a){
+        return RUser.getText();
+    }
+    
+    
+    
+    
+    
+}
 
 
