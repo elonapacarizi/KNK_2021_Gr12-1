@@ -98,4 +98,197 @@ static URI pi= file.toURI();
     
       
     }
+    @FXML
+    private void OnSignIn(ActionEvent event) throws IOException {
+       
+     
+        if(User.getText().trim().isEmpty()&&Pass.getText().trim().isEmpty()){
+        
+            message("Username Field should not be left empty"
+                    + "and Password Field should not be left empty");
+        }
+       
+        
+        else if(User.getText().trim().isEmpty())
+        {
+            
+        message("Username Field should not be left empty");
+        }
+        else if(Pass.getText().trim().isEmpty())
+        {
+          message("Password Field should not be left empty");
+        }
+        else{
+
+            User();
+            
+
+        }
     
+      
+    }
+    
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        p.setVisible(false);
+        FakePass.setVisible(false);
+      
+    
+  mv.setMediaPlayer(mp);
+
+      
+      mp.play();
+   
+              
+    }    
+@FXML
+    public void User() throws IOException {
+       { 
+           
+           String pass= Pass.getText();
+       
+        String user= User.getText();
+           String Passcord= sender2("");
+            String Usecord= sender("");
+
+           String  JBBC_DRIVER="com.mysql.jdbc.Driver";
+           String  DB_URL="jdbc:mysql://localhost:3306/system";
+           String DB_USER="Verona2001";
+           String DB_PASS="root";
+           Connection con=null;
+           try{
+               Class.forName(JBBC_DRIVER);
+               con= DriverManager.getConnection(DB_URL,DB_PASS,DB_USER);
+               System.out.println("Success.....");
+
+               String u,p;
+               u= user;
+               p=pass;
+               PreparedStatement st;
+               ResultSet rs;
+               boolean username_exist=false;
+
+               String query="SELECT * FROM details where Name=? and Password=? ";
+               st=con.prepareStatement(query);
+               st.setString(1, u);
+               st.setString(2, p);
+               rs=st.executeQuery();
+               if(rs.next()){
+                   mp.stop();
+                   nd=1;
+                   Parent root = FXMLLoader.load(getClass().getResource("/destination/FXMLDocument.fxml"));
+                   Stage window= (Stage)Sign.getScene().getWindow();
+                   window.setScene(new Scene(root));
+                   window.centerOnScreen();
+               }else{
+                   Alert alert = new Alert(Alert.AlertType.WARNING);
+                   alert.setContentText("INVALID LOGIN DETAILS");
+                   alert.show();
+               }
+               //con.close();
+           }
+           catch(Exception e){
+               System.out.println(e);
+           }
+
+
+           {
+
+            if (user.contains("Harshad")&&pass.contains("S100")) {
+     
+              mp.stop();
+                Parent root = FXMLLoader.load(getClass().getResource("/destination/FXMLDocument.fxml"));
+                Stage primaryStage= new Stage();
+                primaryStage.initStyle(StageStyle.UNDECORATED);
+
+
+                Scene scene = new Scene(root);
+                primaryStage.setScene(scene);
+                primaryStage.show();
+
+           Stage stage = (Stage) Sign.getScene().getWindow();
+ 
+   stage.close();
+           }
+            
+         
+        
+  else if (user.contains("Verona Krasniqi")&&pass.contains("123456")) {
+        mp.stop();
+
+
+                Parent root = FXMLLoader.load(getClass().getResource("/destination/FXMLDocument.fxml"));
+                Stage window= (Stage)Sign.getScene().getWindow();
+                window.setScene(new Scene(root));
+                window.centerOnScreen();
+            }
+//   else if (user.contains(Usecord)&&pass.contains(Passcord)) {
+//          mp.stop();
+//                Parent root = FXMLLoader.load(getClass().getResource("/destination/FXMLDocument.fxml"));
+//                Stage window= (Stage)Sign.getScene().getWindow();
+//                window.setScene(new Scene(root));
+//                window.centerOnScreen();
+//            }
+            
+
+ else if (user.contains("George")&&pass.contains("Intelligence")) {
+          mp.stop();
+                Parent root = FXMLLoader.load(getClass().getResource("/destination/FXMLDocument.fxml"));
+                Stage window= (Stage)Sign.getScene().getWindow();
+                window.setScene(new Scene(root));
+                window.centerOnScreen();
+            }
+         
+
+      else   if (user.contains("Rinesa")&&pass.contains("222222")){
+           mp.stop();
+                Parent root = FXMLLoader.load(getClass().getResource("/destination/FXMLDocument.fxml"));
+                Stage window= (Stage)Sign.getScene().getWindow();
+                window.setScene(new Scene(root));
+                window.centerOnScreen();
+      }
+ 
+       else if (user.contains("Sara")&&pass.contains("sarasara")) {
+         mp.stop();
+                Parent root = FXMLLoader.load(getClass().getResource("/destination/FXMLDocument.fxml"));
+                Stage window= (Stage)Sign.getScene().getWindow();
+                window.setScene(new Scene(root));
+                window.centerOnScreen();
+        } 
+       
+            
+        else{
+         if(nd==0) {
+             Alert alert = new Alert(Alert.AlertType.WARNING);
+             alert.setContentText("INVALID LOGIN DETAILS");
+             alert.show();
+
+
+         }
+
+
+
+        }
+        }
+       }
+    }
+
+
+private void message(String x){
+  Alert alert = new Alert(Alert.AlertType.INFORMATION);
+          alert.setContentText(x);
+alert.show();
+
+
+}
+        public String sender(String user){
+            User.setText(user);
+            return user;
+        }
+         public String sender2(String pass){
+              Pass.setText(pass);
+            return pass;
+        }
+
+    
+}
