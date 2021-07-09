@@ -215,3 +215,65 @@ out.close();
   }
 
 }
+
+@FXML
+    public void KeyB(KeyEvent h) throws IOException{
+        if (h.getCode() == KeyCode.ESCAPE) {
+            mp.stop();
+            Parent root = FXMLLoader.load(getClass().getResource("/Booking_Interface/FXMLDocument.fxml"));
+            Stage window = (Stage) back
+                    .getScene().getWindow();
+            window.setScene(new Scene(root));
+            window.centerOnScreen();
+        }
+    }
+
+
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+
+ab.setVisible(false);
+eng.setVisible(false);
+        FCom.setItems(list1);
+        Tcom.setItems(list2);
+       mv.setFitHeight(720);
+       mv.setFitWidth(1280);
+        mv.setMediaPlayer(mp);
+       mp.play();
+       if(mp.getStatus()==MediaPlayer.Status.STOPPED){
+              
+
+   mp.play();}
+
+        File D = new File("C:/Program Files/Airline System/src/Text_Files/languages.txt");
+
+        try (Scanner scanner = new Scanner(D)) {
+
+            while (scanner.hasNext())
+
+
+                languageChanger(scanner.next().toString());
+
+
+        }catch (Exception e) { e.printStackTrace(); }
+
+
+    }
+private void languageChanger(String x){
+
+           if(x.equals("ab")){
+               FCom.setPromptText("Zgjidhni");
+               Tcom.setPromptText("Zgjidhni");
+               label.setText("Zgjidhni destinacionin tuaj");
+               t1.setText("Për të");
+               f1.setText("Nga");
+               back.setText("Mbrapa");
+               next.setText("Tjetra");
+           }
+}
+
+    }    
+                               
+
+    
