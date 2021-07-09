@@ -8,34 +8,34 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane id="AnchorPane" fx:id="ap" minHeight="414.0" minWidth="1278.0" prefHeight="414.0" prefWidth="1281.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Seats.FXMLDocumentController">
-    <children>
-        <ImageView fitHeight="448.0" fitWidth="1279.0" pickOnBounds="true" preserveRatio="true">
-            <image>
-                <Image url="file:/C:/Program%20Files/Airline%20System/src/Seats/ProPic.png" />
-            </image>
-        </ImageView>
-        <Button fx:id="Print" layoutX="41.0" layoutY="317.0" mnemonicParsing="false" onAction="#Printing" prefHeight="75.0" prefWidth="179.0" text="Print My Ticket" underline="true">
-            <font>
-                <Font name="Franklin Gothic Medium Italic" size="21.0" />
-            </font>
-        </Button>
-        <Button fx:id="b1" layoutX="291.0" layoutY="108.0" mnemonicParsing="false" onAction="#OnButtons1" prefHeight="37.0" prefWidth="41.0" text="A1" />
-        <Button fx:id="b4" layoutX="290.0" layoutY="145.0" mnemonicParsing="false" onAction="#OnButtons2" prefHeight="23.0" prefWidth="41.0" text="B1" />
-        <Button fx:id="b5" layoutX="332.0" layoutY="145.0" mnemonicParsing="false" onAction="#OnButtons2" prefHeight="25.0" prefWidth="56.0" text="JK1" />
-        <Button fx:id="b2" layoutX="332.0" layoutY="108.0" mnemonicParsing="false" onAction="#OnButtons1" prefHeight="37.0" prefWidth="56.0" text="JL1" />
-        <Button fx:id="b3" layoutX="388.0" layoutY="108.0" mnemonicParsing="false" onAction="#OnButtons1" prefHeight="37.0" prefWidth="48.0" text="AC" />
-        <Button fx:id="b6" layoutX="388.0" layoutY="145.0" mnemonicParsing="false" onAction="#OnButtons2" prefHeight="25.0" prefWidth="48.0" text="BC" />
-        <Button fx:id="b7" layoutX="599.0" layoutY="170.0" mnemonicParsing="false" onAction="#OnButtons3" prefHeight="59.0" prefWidth="41.0" text="SP" />
-        <Button fx:id="b8" layoutX="636.0" layoutY="170.0" mnemonicParsing="false" onAction="#OnButtons3" prefHeight="59.0" prefWidth="41.0" text="U8" />
-        <Button fx:id="b10" layoutX="733.0" layoutY="170.0" mnemonicParsing="false" onAction="#OnButtons4" prefHeight="59.0" prefWidth="66.0" text="ID42" />
-        <Button fx:id="b9" layoutX="677.0" layoutY="170.0" mnemonicParsing="false" onAction="#OnButtons3" prefHeight="59.0" prefWidth="56.0" text="ASC5" />
-        <Button fx:id="b11" layoutX="799.0" layoutY="170.0" mnemonicParsing="false" onAction="#OnButtons4" prefHeight="25.0" prefWidth="66.0" text="L23s" />
-        <Button fx:id="b12" layoutX="799.0" layoutY="195.0" mnemonicParsing="false" onAction="#OnButtons4" prefHeight="37.0" prefWidth="66.0" text="Gtx" />
-        <Label layoutX="424.0" layoutY="290.0" prefHeight="25.0" prefWidth="212.0" text="Choose your Seat">
-            <font>
-                <Font size="24.0" />
-            </font>
-        </Label>
-
-    </children>
+   <children>
+      <ImageView fitHeight="448.0" fitWidth="1279.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Program%20Files/Airline%20System/src/Seats/ProPic.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Print" layoutX="41.0" layoutY="317.0" mnemonicParsing="false" onAction="#Printing" prefHeight="75.0" prefWidth="179.0" text="Print My Ticket" underline="true">
+         <font>
+            <Font name="Franklin Gothic Medium Italic" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="b1" layoutX="291.0" layoutY="108.0" mnemonicParsing="false" onAction="#OnButtons1" prefHeight="37.0" prefWidth="41.0" text="A1" />
+      <Button fx:id="b4" layoutX="290.0" layoutY="145.0" mnemonicParsing="false" onAction="#OnButtons2" prefHeight="23.0" prefWidth="41.0" text="B1" />
+      <Button fx:id="b5" layoutX="332.0" layoutY="145.0" mnemonicParsing="false" onAction="#OnButtons2" prefHeight="25.0" prefWidth="56.0" text="JK1" />
+      <Button fx:id="b2" layoutX="332.0" layoutY="108.0" mnemonicParsing="false" onAction="#OnButtons1" prefHeight="37.0" prefWidth="56.0" text="JL1" />
+      <Button fx:id="b3" layoutX="388.0" layoutY="108.0" mnemonicParsing="false" onAction="#OnButtons1" prefHeight="37.0" prefWidth="48.0" text="AC" />
+      <Button fx:id="b6" layoutX="388.0" layoutY="145.0" mnemonicParsing="false" onAction="#OnButtons2" prefHeight="25.0" prefWidth="48.0" text="BC" />
+      <Button fx:id="b7" layoutX="599.0" layoutY="170.0" mnemonicParsing="false" onAction="#OnButtons3" prefHeight="59.0" prefWidth="41.0" text="SP" />
+      <Button fx:id="b8" layoutX="636.0" layoutY="170.0" mnemonicParsing="false" onAction="#OnButtons3" prefHeight="59.0" prefWidth="41.0" text="U8" />
+      <Button fx:id="b10" layoutX="733.0" layoutY="170.0" mnemonicParsing="false" onAction="#OnButtons4" prefHeight="59.0" prefWidth="66.0" text="ID42" />
+      <Button fx:id="b9" layoutX="677.0" layoutY="170.0" mnemonicParsing="false" onAction="#OnButtons3" prefHeight="59.0" prefWidth="56.0" text="ASC5" />
+      <Button fx:id="b11" layoutX="799.0" layoutY="170.0" mnemonicParsing="false" onAction="#OnButtons4" prefHeight="25.0" prefWidth="66.0" text="L23s" />
+      <Button fx:id="b12" layoutX="799.0" layoutY="195.0" mnemonicParsing="false" onAction="#OnButtons4" prefHeight="37.0" prefWidth="66.0" text="Gtx" />
+      <Label layoutX="424.0" layoutY="290.0" prefHeight="25.0" prefWidth="212.0" text="Choose your Seat">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      
+   </children>
 </AnchorPane>
