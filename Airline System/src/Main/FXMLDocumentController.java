@@ -23,7 +23,7 @@ import java.io.IOException;
 import java.net.URI;
 
 public class FXMLDocumentController implements Initializable {
-    //-----------------
+
   
     
     
@@ -39,6 +39,10 @@ static URI p= file.toURI();
       @FXML
    public MediaView mv;
 
+   
+    @FXML
+    private Label text;
+   
    @FXML
    private Button skip;
   
